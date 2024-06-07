@@ -1,7 +1,7 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <util/delay.h>
-//Seif
+
 #define PIR_SENSOR_PIN PD3
 #define STOP_BUTTON_PIN PB5
 #define RESUME_BUTTON_PIN PB4
