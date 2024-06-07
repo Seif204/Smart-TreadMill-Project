@@ -1,0 +1,948 @@
+
+C:\Users\sabry\AppData\Local\Temp\arduino_build_108259/Smart_TreadMill.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 26 01 	jmp	0x24c	; 0x24c <__vector_1>
+   8:	0c 94 c4 00 	jmp	0x188	; 0x188 <__vector_2>
+   c:	0c 94 f9 00 	jmp	0x1f2	; 0x1f2 <__vector_3>
+  10:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  14:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  18:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  1c:	0c 94 53 01 	jmp	0x2a6	; 0x2a6 <__vector_7>
+  20:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  24:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  28:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  2c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  30:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  34:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  38:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  3c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  40:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  44:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  48:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  4c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  50:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+
+00000054 <__ctors_end>:
+__trampolines_start():
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+
+00000060 <__do_copy_data>:
+__do_copy_data():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  60:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  62:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  64:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  66:	e6 e5       	ldi	r30, 0x56	; 86
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  68:	f4 e0       	ldi	r31, 0x04	; 4
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  6a:	02 c0       	rjmp	.+4      	; 0x70 <__do_copy_data+0x10>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  6c:	05 90       	lpm	r0, Z+
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  6e:	0d 92       	st	X+, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  70:	a2 36       	cpi	r26, 0x62	; 98
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  72:	b1 07       	cpc	r27, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  74:	d9 f7       	brne	.-10     	; 0x6c <__do_copy_data+0xc>
+
+00000076 <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  76:	20 e0       	ldi	r18, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  78:	a2 e6       	ldi	r26, 0x62	; 98
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  7a:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  7c:	01 c0       	rjmp	.+2      	; 0x80 <.do_clear_bss_start>
+
+0000007e <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  7e:	1d 92       	st	X+, r1
+
+00000080 <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  80:	a8 36       	cpi	r26, 0x68	; 104
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  82:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  84:	e1 f7       	brne	.-8      	; 0x7e <.do_clear_bss_loop>
+.do_clear_bss_start():
+  86:	0e 94 80 01 	call	0x300	; 0x300 <main>
+  8a:	0c 94 29 02 	jmp	0x452	; 0x452 <_exit>
+
+0000008e <__bad_interrupt>:
+__vector_12():
+  8e:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000092 <timer0_pwm_init(unsigned char)>:
+_Z15timer0_pwm_inith():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:29
+    }
+}
+
+
+void timer0_pwm_init(uint8_t speed) {
+    TCCR0 |= (1 << WGM00) | (1 << WGM01); // Fast PWM mode
+  92:	93 b7       	in	r25, 0x33	; 51
+  94:	98 64       	ori	r25, 0x48	; 72
+  96:	93 bf       	out	0x33, r25	; 51
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:30
+    TCCR0 |= (1 << COM01) | (1 << CS00);  // Non-inverted PWM, no prescaler
+  98:	93 b7       	in	r25, 0x33	; 51
+  9a:	91 62       	ori	r25, 0x21	; 33
+  9c:	93 bf       	out	0x33, r25	; 51
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:31
+    DDRB |= (1 << PB3); // Set PB3 as output 
+  9e:	bb 9a       	sbi	0x17, 3	; 23
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:32
+    OCR0 = speed; // Set motor speed
+  a0:	8c bf       	out	0x3c, r24	; 60
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:33
+}
+  a2:	08 95       	ret
+
+000000a4 <update_display(unsigned long)>:
+_Z14update_displaym():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:64
+        }
+    }
+}
+
+
+void update_display(uint32_t seconds) {
+  a4:	8f 92       	push	r8
+  a6:	9f 92       	push	r9
+  a8:	af 92       	push	r10
+  aa:	bf 92       	push	r11
+  ac:	cf 92       	push	r12
+  ae:	df 92       	push	r13
+  b0:	ef 92       	push	r14
+  b2:	ff 92       	push	r15
+  b4:	cf 93       	push	r28
+  b6:	df 93       	push	r29
+  b8:	6b 01       	movw	r12, r22
+  ba:	7c 01       	movw	r14, r24
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:65
+    uint8_t secs = seconds % 60; 
+  bc:	8c e3       	ldi	r24, 0x3C	; 60
+  be:	88 2e       	mov	r8, r24
+  c0:	91 2c       	mov	r9, r1
+  c2:	a1 2c       	mov	r10, r1
+  c4:	b1 2c       	mov	r11, r1
+  c6:	c7 01       	movw	r24, r14
+  c8:	a5 01       	movw	r20, r10
+  ca:	94 01       	movw	r18, r8
+  cc:	0e 94 07 02 	call	0x40e	; 0x40e <__udivmodsi4>
+  d0:	d6 2f       	mov	r29, r22
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:66
+    uint8_t minutes = (seconds / 60) % 60; 
+  d2:	ca 01       	movw	r24, r20
+  d4:	b9 01       	movw	r22, r18
+  d6:	a5 01       	movw	r20, r10
+  d8:	94 01       	movw	r18, r8
+  da:	0e 94 07 02 	call	0x40e	; 0x40e <__udivmodsi4>
+  de:	c6 2f       	mov	r28, r22
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:67
+    uint8_t hours = seconds / 3600;
+  e0:	c7 01       	movw	r24, r14
+  e2:	b6 01       	movw	r22, r12
+  e4:	20 e1       	ldi	r18, 0x10	; 16
+  e6:	3e e0       	ldi	r19, 0x0E	; 14
+  e8:	40 e0       	ldi	r20, 0x00	; 0
+  ea:	50 e0       	ldi	r21, 0x00	; 0
+  ec:	0e 94 07 02 	call	0x40e	; 0x40e <__udivmodsi4>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:70
+
+    // Display first digit in seconds
+    PORTA = (1 << PA5);
+  f0:	80 e2       	ldi	r24, 0x20	; 32
+  f2:	8b bb       	out	0x1b, r24	; 27
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:71
+    PORTC = secs % 10;
+  f4:	3a e0       	ldi	r19, 0x0A	; 10
+  f6:	8d 2f       	mov	r24, r29
+  f8:	63 2f       	mov	r22, r19
+  fa:	0e 94 fb 01 	call	0x3f6	; 0x3f6 <__udivmodqi4>
+  fe:	95 bb       	out	0x15, r25	; 21
+_delay_ms():
+c:\users\sabry\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:187
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 100:	e9 ef       	ldi	r30, 0xF9	; 249
+ 102:	f0 e0       	ldi	r31, 0x00	; 0
+ 104:	31 97       	sbiw	r30, 0x01	; 1
+ 106:	f1 f7       	brne	.-4      	; 0x104 <update_display(unsigned long)+0x60>
+ 108:	00 c0       	rjmp	.+0      	; 0x10a <update_display(unsigned long)+0x66>
+ 10a:	00 00       	nop
+_Z14update_displaym():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:75
+    _delay_ms(1);
+
+    // Display second digit in seconds
+    PORTA = (1 << PA4);
+ 10c:	90 e1       	ldi	r25, 0x10	; 16
+ 10e:	9b bb       	out	0x1b, r25	; 27
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:76
+    PORTC = secs / 10;
+ 110:	85 bb       	out	0x15, r24	; 21
+_delay_ms():
+c:\users\sabry\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:187
+ 112:	89 ef       	ldi	r24, 0xF9	; 249
+ 114:	90 e0       	ldi	r25, 0x00	; 0
+ 116:	01 97       	sbiw	r24, 0x01	; 1
+ 118:	f1 f7       	brne	.-4      	; 0x116 <update_display(unsigned long)+0x72>
+ 11a:	00 c0       	rjmp	.+0      	; 0x11c <update_display(unsigned long)+0x78>
+ 11c:	00 00       	nop
+_Z14update_displaym():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:80
+    _delay_ms(1);
+
+    // Display first digit in minutes
+    PORTA = (1 << PA3);
+ 11e:	88 e0       	ldi	r24, 0x08	; 8
+ 120:	8b bb       	out	0x1b, r24	; 27
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:81
+    PORTC = minutes % 10;
+ 122:	8c 2f       	mov	r24, r28
+ 124:	0e 94 fb 01 	call	0x3f6	; 0x3f6 <__udivmodqi4>
+ 128:	95 bb       	out	0x15, r25	; 21
+_delay_ms():
+c:\users\sabry\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:187
+ 12a:	e9 ef       	ldi	r30, 0xF9	; 249
+ 12c:	f0 e0       	ldi	r31, 0x00	; 0
+ 12e:	31 97       	sbiw	r30, 0x01	; 1
+ 130:	f1 f7       	brne	.-4      	; 0x12e <update_display(unsigned long)+0x8a>
+ 132:	00 c0       	rjmp	.+0      	; 0x134 <update_display(unsigned long)+0x90>
+ 134:	00 00       	nop
+_Z14update_displaym():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:85
+    _delay_ms(1);
+
+    // Display second digit in minutes
+    PORTA = (1 << PA2);
+ 136:	94 e0       	ldi	r25, 0x04	; 4
+ 138:	9b bb       	out	0x1b, r25	; 27
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:86
+    PORTC = minutes / 10;
+ 13a:	85 bb       	out	0x15, r24	; 21
+_delay_ms():
+c:\users\sabry\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:187
+ 13c:	89 ef       	ldi	r24, 0xF9	; 249
+ 13e:	90 e0       	ldi	r25, 0x00	; 0
+ 140:	01 97       	sbiw	r24, 0x01	; 1
+ 142:	f1 f7       	brne	.-4      	; 0x140 <update_display(unsigned long)+0x9c>
+ 144:	00 c0       	rjmp	.+0      	; 0x146 <update_display(unsigned long)+0xa2>
+ 146:	00 00       	nop
+_Z14update_displaym():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:90
+    _delay_ms(1);
+
+    // Display first digit in hours
+    PORTA = (1 << PA1);
+ 148:	82 e0       	ldi	r24, 0x02	; 2
+ 14a:	8b bb       	out	0x1b, r24	; 27
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:91
+    PORTC = hours % 10;
+ 14c:	82 2f       	mov	r24, r18
+ 14e:	0e 94 fb 01 	call	0x3f6	; 0x3f6 <__udivmodqi4>
+ 152:	95 bb       	out	0x15, r25	; 21
+_delay_ms():
+c:\users\sabry\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:187
+ 154:	e9 ef       	ldi	r30, 0xF9	; 249
+ 156:	f0 e0       	ldi	r31, 0x00	; 0
+ 158:	31 97       	sbiw	r30, 0x01	; 1
+ 15a:	f1 f7       	brne	.-4      	; 0x158 <update_display(unsigned long)+0xb4>
+ 15c:	00 c0       	rjmp	.+0      	; 0x15e <update_display(unsigned long)+0xba>
+ 15e:	00 00       	nop
+_Z14update_displaym():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:95
+    _delay_ms(1);
+
+    // Display second digit in hours
+    PORTA = (1 << PA0);
+ 160:	91 e0       	ldi	r25, 0x01	; 1
+ 162:	9b bb       	out	0x1b, r25	; 27
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:96
+    PORTC = hours / 10;
+ 164:	85 bb       	out	0x15, r24	; 21
+_delay_ms():
+c:\users\sabry\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:187
+ 166:	89 ef       	ldi	r24, 0xF9	; 249
+ 168:	90 e0       	ldi	r25, 0x00	; 0
+ 16a:	01 97       	sbiw	r24, 0x01	; 1
+ 16c:	f1 f7       	brne	.-4      	; 0x16a <update_display(unsigned long)+0xc6>
+ 16e:	00 c0       	rjmp	.+0      	; 0x170 <update_display(unsigned long)+0xcc>
+ 170:	00 00       	nop
+_Z14update_displaym():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:98
+    _delay_ms(1);
+}
+ 172:	df 91       	pop	r29
+ 174:	cf 91       	pop	r28
+ 176:	ff 90       	pop	r15
+ 178:	ef 90       	pop	r14
+ 17a:	df 90       	pop	r13
+ 17c:	cf 90       	pop	r12
+ 17e:	bf 90       	pop	r11
+ 180:	af 90       	pop	r10
+ 182:	9f 90       	pop	r9
+ 184:	8f 90       	pop	r8
+ 186:	08 95       	ret
+
+00000188 <__vector_2>:
+__vector_2():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:53
+ISR(INT2_vect) {
+    if (motor_speed >= 25) motor_speed -= 50;
+    timer0_pwm_init(motor_speed);
+}
+
+ISR(INT1_vect) {
+ 188:	1f 92       	push	r1
+ 18a:	0f 92       	push	r0
+ 18c:	0f b6       	in	r0, 0x3f	; 63
+ 18e:	0f 92       	push	r0
+ 190:	11 24       	eor	r1, r1
+ 192:	2f 93       	push	r18
+ 194:	3f 93       	push	r19
+ 196:	4f 93       	push	r20
+ 198:	5f 93       	push	r21
+ 19a:	6f 93       	push	r22
+ 19c:	7f 93       	push	r23
+ 19e:	8f 93       	push	r24
+ 1a0:	9f 93       	push	r25
+ 1a2:	af 93       	push	r26
+ 1a4:	bf 93       	push	r27
+ 1a6:	ef 93       	push	r30
+ 1a8:	ff 93       	push	r31
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:54
+    if (PIND & (1 << PIR_SENSOR_PIN)) {
+ 1aa:	83 9b       	sbis	0x10, 3	; 16
+ 1ac:	09 c0       	rjmp	.+18     	; 0x1c0 <__vector_2+0x38>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:55
+        if (treadmill_running) {
+ 1ae:	80 91 63 00 	lds	r24, 0x0063	; 0x800063 <treadmill_running>
+ 1b2:	88 23       	and	r24, r24
+ 1b4:	b1 f0       	breq	.+44     	; 0x1e2 <__vector_2+0x5a>
+stop_treadmill():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:108
+    treadmill_paused = 0;
+    timer0_pwm_init(motor_speed);
+}
+
+void stop_treadmill() {
+    treadmill_running = 0;
+ 1b6:	10 92 63 00 	sts	0x0063, r1	; 0x800063 <treadmill_running>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:109
+    timer0_pwm_init(0);
+ 1ba:	80 e0       	ldi	r24, 0x00	; 0
+start_treadmill():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:104
+
+
+void start_treadmill() {
+    treadmill_running = 1;
+    treadmill_paused = 0;
+    timer0_pwm_init(motor_speed);
+ 1bc:	0e 94 49 00 	call	0x92	; 0x92 <timer0_pwm_init(unsigned char)>
+__vector_2():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:61
+            stop_treadmill();
+        } else {
+            start_treadmill();
+        }
+    }
+}
+ 1c0:	ff 91       	pop	r31
+ 1c2:	ef 91       	pop	r30
+ 1c4:	bf 91       	pop	r27
+ 1c6:	af 91       	pop	r26
+ 1c8:	9f 91       	pop	r25
+ 1ca:	8f 91       	pop	r24
+ 1cc:	7f 91       	pop	r23
+ 1ce:	6f 91       	pop	r22
+ 1d0:	5f 91       	pop	r21
+ 1d2:	4f 91       	pop	r20
+ 1d4:	3f 91       	pop	r19
+ 1d6:	2f 91       	pop	r18
+ 1d8:	0f 90       	pop	r0
+ 1da:	0f be       	out	0x3f, r0	; 63
+ 1dc:	0f 90       	pop	r0
+ 1de:	1f 90       	pop	r1
+ 1e0:	18 95       	reti
+start_treadmill():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:102
+    _delay_ms(1);
+}
+
+
+void start_treadmill() {
+    treadmill_running = 1;
+ 1e2:	81 e0       	ldi	r24, 0x01	; 1
+ 1e4:	80 93 63 00 	sts	0x0063, r24	; 0x800063 <treadmill_running>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:103
+    treadmill_paused = 0;
+ 1e8:	10 92 62 00 	sts	0x0062, r1	; 0x800062 <__data_end>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:104
+    timer0_pwm_init(motor_speed);
+ 1ec:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 1f0:	e5 cf       	rjmp	.-54     	; 0x1bc <__vector_2+0x34>
+
+000001f2 <__vector_3>:
+__vector_3():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:48
+ISR(INT0_vect) {
+    if (motor_speed < 255) motor_speed += 50;
+    timer0_pwm_init(motor_speed);
+}
+
+ISR(INT2_vect) {
+ 1f2:	1f 92       	push	r1
+ 1f4:	0f 92       	push	r0
+ 1f6:	0f b6       	in	r0, 0x3f	; 63
+ 1f8:	0f 92       	push	r0
+ 1fa:	11 24       	eor	r1, r1
+ 1fc:	2f 93       	push	r18
+ 1fe:	3f 93       	push	r19
+ 200:	4f 93       	push	r20
+ 202:	5f 93       	push	r21
+ 204:	6f 93       	push	r22
+ 206:	7f 93       	push	r23
+ 208:	8f 93       	push	r24
+ 20a:	9f 93       	push	r25
+ 20c:	af 93       	push	r26
+ 20e:	bf 93       	push	r27
+ 210:	ef 93       	push	r30
+ 212:	ff 93       	push	r31
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:49
+    if (motor_speed >= 25) motor_speed -= 50;
+ 214:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 218:	89 31       	cpi	r24, 0x19	; 25
+ 21a:	18 f0       	brcs	.+6      	; 0x222 <__vector_3+0x30>
+ 21c:	82 53       	subi	r24, 0x32	; 50
+ 21e:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:50
+    timer0_pwm_init(motor_speed);
+ 222:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 226:	0e 94 49 00 	call	0x92	; 0x92 <timer0_pwm_init(unsigned char)>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:51
+}
+ 22a:	ff 91       	pop	r31
+ 22c:	ef 91       	pop	r30
+ 22e:	bf 91       	pop	r27
+ 230:	af 91       	pop	r26
+ 232:	9f 91       	pop	r25
+ 234:	8f 91       	pop	r24
+ 236:	7f 91       	pop	r23
+ 238:	6f 91       	pop	r22
+ 23a:	5f 91       	pop	r21
+ 23c:	4f 91       	pop	r20
+ 23e:	3f 91       	pop	r19
+ 240:	2f 91       	pop	r18
+ 242:	0f 90       	pop	r0
+ 244:	0f be       	out	0x3f, r0	; 63
+ 246:	0f 90       	pop	r0
+ 248:	1f 90       	pop	r1
+ 24a:	18 95       	reti
+
+0000024c <__vector_1>:
+__vector_1():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:43
+    MCUCR |= (1 << ISC01); // Rising edge of INT0
+    MCUCR |= (1 << ISC10) | (1 << ISC11); // Rising edge of INT1
+    MCUCSR &= ~(1 << ISC2); // Falling edge of INT2
+}
+
+ISR(INT0_vect) {
+ 24c:	1f 92       	push	r1
+ 24e:	0f 92       	push	r0
+ 250:	0f b6       	in	r0, 0x3f	; 63
+ 252:	0f 92       	push	r0
+ 254:	11 24       	eor	r1, r1
+ 256:	2f 93       	push	r18
+ 258:	3f 93       	push	r19
+ 25a:	4f 93       	push	r20
+ 25c:	5f 93       	push	r21
+ 25e:	6f 93       	push	r22
+ 260:	7f 93       	push	r23
+ 262:	8f 93       	push	r24
+ 264:	9f 93       	push	r25
+ 266:	af 93       	push	r26
+ 268:	bf 93       	push	r27
+ 26a:	ef 93       	push	r30
+ 26c:	ff 93       	push	r31
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:44
+    if (motor_speed < 255) motor_speed += 50;
+ 26e:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 272:	8f 3f       	cpi	r24, 0xFF	; 255
+ 274:	19 f0       	breq	.+6      	; 0x27c <__vector_1+0x30>
+ 276:	8e 5c       	subi	r24, 0xCE	; 206
+ 278:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:45
+    timer0_pwm_init(motor_speed);
+ 27c:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 280:	0e 94 49 00 	call	0x92	; 0x92 <timer0_pwm_init(unsigned char)>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:46
+}
+ 284:	ff 91       	pop	r31
+ 286:	ef 91       	pop	r30
+ 288:	bf 91       	pop	r27
+ 28a:	af 91       	pop	r26
+ 28c:	9f 91       	pop	r25
+ 28e:	8f 91       	pop	r24
+ 290:	7f 91       	pop	r23
+ 292:	6f 91       	pop	r22
+ 294:	5f 91       	pop	r21
+ 296:	4f 91       	pop	r20
+ 298:	3f 91       	pop	r19
+ 29a:	2f 91       	pop	r18
+ 29c:	0f 90       	pop	r0
+ 29e:	0f be       	out	0x3f, r0	; 63
+ 2a0:	0f 90       	pop	r0
+ 2a2:	1f 90       	pop	r1
+ 2a4:	18 95       	reti
+
+000002a6 <__vector_7>:
+__vector_7():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:21
+    TCCR1B |= (1 << WGM12)|(1 << CS11) | (1 << CS10); //  CTC mode & Enable Prescaler 64
+    OCR1A = 15624; // compare value
+    TIMSK |= (1 << OCIE1A); // Enable CTC interrupt 
+}
+
+ISR(TIMER1_COMPA_vect) {
+ 2a6:	1f 92       	push	r1
+ 2a8:	0f 92       	push	r0
+ 2aa:	0f b6       	in	r0, 0x3f	; 63
+ 2ac:	0f 92       	push	r0
+ 2ae:	11 24       	eor	r1, r1
+ 2b0:	8f 93       	push	r24
+ 2b2:	9f 93       	push	r25
+ 2b4:	af 93       	push	r26
+ 2b6:	bf 93       	push	r27
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:22
+    if (treadmill_running && !treadmill_paused) {
+ 2b8:	80 91 63 00 	lds	r24, 0x0063	; 0x800063 <treadmill_running>
+ 2bc:	88 23       	and	r24, r24
+ 2be:	b9 f0       	breq	.+46     	; 0x2ee <__vector_7+0x48>
+ 2c0:	80 91 62 00 	lds	r24, 0x0062	; 0x800062 <__data_end>
+ 2c4:	81 11       	cpse	r24, r1
+ 2c6:	13 c0       	rjmp	.+38     	; 0x2ee <__vector_7+0x48>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:23
+        stopwatch_seconds++;
+ 2c8:	80 91 64 00 	lds	r24, 0x0064	; 0x800064 <stopwatch_seconds>
+ 2cc:	90 91 65 00 	lds	r25, 0x0065	; 0x800065 <stopwatch_seconds+0x1>
+ 2d0:	a0 91 66 00 	lds	r26, 0x0066	; 0x800066 <stopwatch_seconds+0x2>
+ 2d4:	b0 91 67 00 	lds	r27, 0x0067	; 0x800067 <stopwatch_seconds+0x3>
+ 2d8:	01 96       	adiw	r24, 0x01	; 1
+ 2da:	a1 1d       	adc	r26, r1
+ 2dc:	b1 1d       	adc	r27, r1
+ 2de:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <stopwatch_seconds>
+ 2e2:	90 93 65 00 	sts	0x0065, r25	; 0x800065 <stopwatch_seconds+0x1>
+ 2e6:	a0 93 66 00 	sts	0x0066, r26	; 0x800066 <stopwatch_seconds+0x2>
+ 2ea:	b0 93 67 00 	sts	0x0067, r27	; 0x800067 <stopwatch_seconds+0x3>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:25
+    }
+}
+ 2ee:	bf 91       	pop	r27
+ 2f0:	af 91       	pop	r26
+ 2f2:	9f 91       	pop	r25
+ 2f4:	8f 91       	pop	r24
+ 2f6:	0f 90       	pop	r0
+ 2f8:	0f be       	out	0x3f, r0	; 63
+ 2fa:	0f 90       	pop	r0
+ 2fc:	1f 90       	pop	r1
+ 2fe:	18 95       	reti
+
+00000300 <main>:
+main():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:130
+    update_display(stopwatch_seconds); 
+}
+
+int main(void) {
+  
+    DDRB &= ~((1 << STOP_BUTTON_PIN) | (1 << RESUME_BUTTON_PIN)| (1 << RESET_TIME_PIN) ); // Set PB4, PB5 ,PB6 as input
+ 300:	87 b3       	in	r24, 0x17	; 23
+ 302:	8f 78       	andi	r24, 0x8F	; 143
+ 304:	87 bb       	out	0x17, r24	; 23
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:131
+    DDRC = 0x0F; // Set first 4 pins of PORTC as output 
+ 306:	8f e0       	ldi	r24, 0x0F	; 15
+ 308:	84 bb       	out	0x14, r24	; 20
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:132
+    DDRA = 0x3F; // Set first 6 pins of PORTA as output 
+ 30a:	8f e3       	ldi	r24, 0x3F	; 63
+ 30c:	8a bb       	out	0x1a, r24	; 26
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:133
+    DDRD &= ~(1 << PIR_SENSOR_PIN); // Set PIR_SENSOR_PIN as input
+ 30e:	8b 98       	cbi	0x11, 3	; 17
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:134
+    DDRB |= (1 << PB0) | (1 << PB1); // Set PB0 and PB1 as outputs
+ 310:	87 b3       	in	r24, 0x17	; 23
+ 312:	83 60       	ori	r24, 0x03	; 3
+ 314:	87 bb       	out	0x17, r24	; 23
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:135
+    PORTB |= (1 << PB0); // Set PB0 high to rotate the motor
+ 316:	c0 9a       	sbi	0x18, 0	; 24
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:136
+    PORTB &= ~(1 << PB1); // Set PB1 low
+ 318:	c1 98       	cbi	0x18, 1	; 24
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:137
+    SREG |= (1 << 7);  // Enable global interrupts
+ 31a:	8f b7       	in	r24, 0x3f	; 63
+ 31c:	80 68       	ori	r24, 0x80	; 128
+ 31e:	8f bf       	out	0x3f, r24	; 63
+timer1_init():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:16
+uint8_t motor_speed = 50; // Initial motor speed
+uint8_t treadmill_running = 0;
+uint8_t treadmill_paused = 0;
+
+void timer1_init() {
+    TCCR1B |= (1 << WGM12)|(1 << CS11) | (1 << CS10); //  CTC mode & Enable Prescaler 64
+ 320:	8e b5       	in	r24, 0x2e	; 46
+ 322:	8b 60       	ori	r24, 0x0B	; 11
+ 324:	8e bd       	out	0x2e, r24	; 46
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:17
+    OCR1A = 15624; // compare value
+ 326:	88 e0       	ldi	r24, 0x08	; 8
+ 328:	9d e3       	ldi	r25, 0x3D	; 61
+ 32a:	9b bd       	out	0x2b, r25	; 43
+ 32c:	8a bd       	out	0x2a, r24	; 42
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:18
+    TIMSK |= (1 << OCIE1A); // Enable CTC interrupt 
+ 32e:	89 b7       	in	r24, 0x39	; 57
+ 330:	80 61       	ori	r24, 0x10	; 16
+ 332:	89 bf       	out	0x39, r24	; 57
+main():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:141
+    PORTB &= ~(1 << PB1); // Set PB1 low
+    SREG |= (1 << 7);  // Enable global interrupts
+    
+ 
+    timer1_init();
+    timer0_pwm_init(motor_speed);
+ 334:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 338:	0e 94 49 00 	call	0x92	; 0x92 <timer0_pwm_init(unsigned char)>
+ext_interrupt_init():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:37
+    OCR0 = speed; // Set motor speed
+}
+
+
+void ext_interrupt_init() {
+    GICR |= (1 << INT0) | (1 << INT1) | (1 << INT2); // Enable INT0, INT1, INT2
+ 33c:	8b b7       	in	r24, 0x3b	; 59
+ 33e:	80 6e       	ori	r24, 0xE0	; 224
+ 340:	8b bf       	out	0x3b, r24	; 59
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:38
+    MCUCR |= (1 << ISC01); // Rising edge of INT0
+ 342:	85 b7       	in	r24, 0x35	; 53
+ 344:	82 60       	ori	r24, 0x02	; 2
+ 346:	85 bf       	out	0x35, r24	; 53
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:39
+    MCUCR |= (1 << ISC10) | (1 << ISC11); // Rising edge of INT1
+ 348:	85 b7       	in	r24, 0x35	; 53
+ 34a:	8c 60       	ori	r24, 0x0C	; 12
+ 34c:	85 bf       	out	0x35, r24	; 53
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:40
+    MCUCSR &= ~(1 << ISC2); // Falling edge of INT2
+ 34e:	84 b7       	in	r24, 0x34	; 52
+ 350:	8f 7b       	andi	r24, 0xBF	; 191
+ 352:	84 bf       	out	0x34, r24	; 52
+stop_treadmill():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:108
+    treadmill_paused = 0;
+    timer0_pwm_init(motor_speed);
+}
+
+void stop_treadmill() {
+    treadmill_running = 0;
+ 354:	10 92 63 00 	sts	0x0063, r1	; 0x800063 <treadmill_running>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:109
+    timer0_pwm_init(0);
+ 358:	80 e0       	ldi	r24, 0x00	; 0
+ 35a:	0e 94 49 00 	call	0x92	; 0x92 <timer0_pwm_init(unsigned char)>
+pause_treadmill():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:113
+}
+
+void pause_treadmill() {
+    treadmill_paused = 1;
+ 35e:	c1 e0       	ldi	r28, 0x01	; 1
+main():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:149
+
+    stop_treadmill(); // Initialize state Tradmaill
+
+    while (1) {
+        // Check if the stop button is pressed
+        if (PINB & (1 << STOP_BUTTON_PIN)) {
+ 360:	b5 9b       	sbis	0x16, 5	; 22
+ 362:	11 c0       	rjmp	.+34     	; 0x386 <main+0x86>
+pause_treadmill():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:113
+    treadmill_running = 0;
+    timer0_pwm_init(0);
+}
+
+void pause_treadmill() {
+    treadmill_paused = 1;
+ 364:	c0 93 62 00 	sts	0x0062, r28	; 0x800062 <__data_end>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:114
+    timer0_pwm_init(0);
+ 368:	80 e0       	ldi	r24, 0x00	; 0
+ 36a:	0e 94 49 00 	call	0x92	; 0x92 <timer0_pwm_init(unsigned char)>
+main():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:151
+
+    while (1) {
+        // Check if the stop button is pressed
+        if (PINB & (1 << STOP_BUTTON_PIN)) {
+            pause_treadmill(); 
+            update_display(stopwatch_seconds); 
+ 36e:	60 91 64 00 	lds	r22, 0x0064	; 0x800064 <stopwatch_seconds>
+ 372:	70 91 65 00 	lds	r23, 0x0065	; 0x800065 <stopwatch_seconds+0x1>
+ 376:	80 91 66 00 	lds	r24, 0x0066	; 0x800066 <stopwatch_seconds+0x2>
+ 37a:	90 91 67 00 	lds	r25, 0x0067	; 0x800067 <stopwatch_seconds+0x3>
+ 37e:	0e 94 52 00 	call	0xa4	; 0xa4 <update_display(unsigned long)>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:152
+            while (PINB & (1 << STOP_BUTTON_PIN)); 
+ 382:	b5 99       	sbic	0x16, 5	; 22
+ 384:	fe cf       	rjmp	.-4      	; 0x382 <main+0x82>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:156
+        }
+
+        // Check if the resume button is pressed
+        if (PINB & (1 << RESUME_BUTTON_PIN)) {
+ 386:	b4 9b       	sbis	0x16, 4	; 22
+ 388:	0c c0       	rjmp	.+24     	; 0x3a2 <main+0xa2>
+resume_treadmill():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:118
+    treadmill_paused = 1;
+    timer0_pwm_init(0);
+}
+
+void resume_treadmill() {
+    treadmill_paused = 0;
+ 38a:	10 92 62 00 	sts	0x0062, r1	; 0x800062 <__data_end>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:119
+    if (treadmill_running) {
+ 38e:	80 91 63 00 	lds	r24, 0x0063	; 0x800063 <treadmill_running>
+ 392:	88 23       	and	r24, r24
+ 394:	21 f0       	breq	.+8      	; 0x39e <main+0x9e>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:120
+        timer0_pwm_init(motor_speed); 
+ 396:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 39a:	0e 94 49 00 	call	0x92	; 0x92 <timer0_pwm_init(unsigned char)>
+main():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:158
+        }
+
+        // Check if the resume button is pressed
+        if (PINB & (1 << RESUME_BUTTON_PIN)) {
+            resume_treadmill(); 
+            while (PINB & (1 << RESUME_BUTTON_PIN));
+ 39e:	b4 99       	sbic	0x16, 4	; 22
+ 3a0:	fe cf       	rjmp	.-4      	; 0x39e <main+0x9e>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:162
+        }
+        
+        // Reset the display
+        if (PINB & (1 << RESET_TIME_PIN)) {
+ 3a2:	b6 9b       	sbis	0x16, 6	; 22
+ 3a4:	0f c0       	rjmp	.+30     	; 0x3c4 <main+0xc4>
+reset_display():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:124
+    if (treadmill_running) {
+        timer0_pwm_init(motor_speed); 
+    }
+}
+void reset_display() {
+    stopwatch_seconds = 0; // Reset the stopwatch counter
+ 3a6:	10 92 64 00 	sts	0x0064, r1	; 0x800064 <stopwatch_seconds>
+ 3aa:	10 92 65 00 	sts	0x0065, r1	; 0x800065 <stopwatch_seconds+0x1>
+ 3ae:	10 92 66 00 	sts	0x0066, r1	; 0x800066 <stopwatch_seconds+0x2>
+ 3b2:	10 92 67 00 	sts	0x0067, r1	; 0x800067 <stopwatch_seconds+0x3>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:125
+    update_display(stopwatch_seconds); 
+ 3b6:	60 e0       	ldi	r22, 0x00	; 0
+ 3b8:	70 e0       	ldi	r23, 0x00	; 0
+ 3ba:	cb 01       	movw	r24, r22
+ 3bc:	0e 94 52 00 	call	0xa4	; 0xa4 <update_display(unsigned long)>
+main():
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:164
+        }
+        
+        // Reset the display
+        if (PINB & (1 << RESET_TIME_PIN)) {
+           reset_display();
+           while (PINB & (1 << RESET_TIME_PIN)); // Wait for button release
+ 3c0:	b6 99       	sbic	0x16, 6	; 22
+ 3c2:	fe cf       	rjmp	.-4      	; 0x3c0 <main+0xc0>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:168
+}
+
+        // Update the display if the treadmill is running and not paused
+        if (treadmill_running && !treadmill_paused) {
+ 3c4:	80 91 63 00 	lds	r24, 0x0063	; 0x800063 <treadmill_running>
+ 3c8:	88 23       	and	r24, r24
+ 3ca:	71 f0       	breq	.+28     	; 0x3e8 <main+0xe8>
+ 3cc:	80 91 62 00 	lds	r24, 0x0062	; 0x800062 <__data_end>
+ 3d0:	81 11       	cpse	r24, r1
+ 3d2:	0a c0       	rjmp	.+20     	; 0x3e8 <main+0xe8>
+C:\Users\sabry\OneDrive\Desktop\New folder\Smart_TreadMill/Smart_TreadMill.ino:169
+            update_display(stopwatch_seconds);
+ 3d4:	60 91 64 00 	lds	r22, 0x0064	; 0x800064 <stopwatch_seconds>
+ 3d8:	70 91 65 00 	lds	r23, 0x0065	; 0x800065 <stopwatch_seconds+0x1>
+ 3dc:	80 91 66 00 	lds	r24, 0x0066	; 0x800066 <stopwatch_seconds+0x2>
+ 3e0:	90 91 67 00 	lds	r25, 0x0067	; 0x800067 <stopwatch_seconds+0x3>
+ 3e4:	0e 94 52 00 	call	0xa4	; 0xa4 <update_display(unsigned long)>
+_delay_ms():
+c:\users\sabry\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:187
+ 3e8:	81 ee       	ldi	r24, 0xE1	; 225
+ 3ea:	94 e0       	ldi	r25, 0x04	; 4
+ 3ec:	01 97       	sbiw	r24, 0x01	; 1
+ 3ee:	f1 f7       	brne	.-4      	; 0x3ec <main+0xec>
+ 3f0:	00 c0       	rjmp	.+0      	; 0x3f2 <main+0xf2>
+ 3f2:	00 00       	nop
+ 3f4:	b5 cf       	rjmp	.-150    	; 0x360 <main+0x60>
+
+000003f6 <__udivmodqi4>:
+__udivmodqi4():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1346
+ 3f6:	99 1b       	sub	r25, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1347
+ 3f8:	79 e0       	ldi	r23, 0x09	; 9
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1348
+ 3fa:	04 c0       	rjmp	.+8      	; 0x404 <__udivmodqi4_ep>
+
+000003fc <__udivmodqi4_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1350
+ 3fc:	99 1f       	adc	r25, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1351
+ 3fe:	96 17       	cp	r25, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1352
+ 400:	08 f0       	brcs	.+2      	; 0x404 <__udivmodqi4_ep>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1353
+ 402:	96 1b       	sub	r25, r22
+
+00000404 <__udivmodqi4_ep>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1355
+ 404:	88 1f       	adc	r24, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1356
+ 406:	7a 95       	dec	r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1357
+ 408:	c9 f7       	brne	.-14     	; 0x3fc <__udivmodqi4_loop>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1358
+ 40a:	80 95       	com	r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1360
+ 40c:	08 95       	ret
+
+0000040e <__udivmodsi4>:
+__udivmodsi4():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1638
+ 40e:	a1 e2       	ldi	r26, 0x21	; 33
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1639
+ 410:	1a 2e       	mov	r1, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1640
+ 412:	aa 1b       	sub	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1641
+ 414:	bb 1b       	sub	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1642
+ 416:	fd 01       	movw	r30, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1644
+ 418:	0d c0       	rjmp	.+26     	; 0x434 <__udivmodsi4_ep>
+
+0000041a <__udivmodsi4_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1646
+ 41a:	aa 1f       	adc	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1647
+ 41c:	bb 1f       	adc	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1648
+ 41e:	ee 1f       	adc	r30, r30
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1649
+ 420:	ff 1f       	adc	r31, r31
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1650
+ 422:	a2 17       	cp	r26, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1651
+ 424:	b3 07       	cpc	r27, r19
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1652
+ 426:	e4 07       	cpc	r30, r20
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1653
+ 428:	f5 07       	cpc	r31, r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1654
+ 42a:	20 f0       	brcs	.+8      	; 0x434 <__udivmodsi4_ep>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1655
+ 42c:	a2 1b       	sub	r26, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1656
+ 42e:	b3 0b       	sbc	r27, r19
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1657
+ 430:	e4 0b       	sbc	r30, r20
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1658
+ 432:	f5 0b       	sbc	r31, r21
+
+00000434 <__udivmodsi4_ep>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1660
+ 434:	66 1f       	adc	r22, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1661
+ 436:	77 1f       	adc	r23, r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1662
+ 438:	88 1f       	adc	r24, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1663
+ 43a:	99 1f       	adc	r25, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1664
+ 43c:	1a 94       	dec	r1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1665
+ 43e:	69 f7       	brne	.-38     	; 0x41a <__udivmodsi4_loop>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1667
+ 440:	60 95       	com	r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1668
+ 442:	70 95       	com	r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1669
+ 444:	80 95       	com	r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1670
+ 446:	90 95       	com	r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1672
+ 448:	9b 01       	movw	r18, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1674
+ 44a:	ac 01       	movw	r20, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1676
+ 44c:	bd 01       	movw	r22, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1678
+ 44e:	cf 01       	movw	r24, r30
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1680
+ 450:	08 95       	ret
+
+00000452 <_exit>:
+exit():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ 452:	f8 94       	cli
+
+00000454 <__stop_program>:
+__stop_program():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ 454:	ff cf       	rjmp	.-2      	; 0x454 <__stop_program>
